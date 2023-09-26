@@ -4,18 +4,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  width: 100vh;
+  pointer-events: none;
+  background-color: white;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
   height: 50vh;
 }
 
 .screen-1 {
-  background-color: pink;
+  z-index: 1;
 }
 
 .title {
@@ -29,7 +32,7 @@ h2 {
 }
 
 .screen-2 {
-  background-color: lightblue;
+  z-index: -1;
 }
 .timer {
   display: flex;
@@ -46,6 +49,8 @@ h2 {
   border: solid black 1px;
   padding: 5px 20px;
   border-radius: 50px;
+  pointer-events: none;
+  z-index: 999;
 }
 
 .start-button:hover {
@@ -53,11 +58,17 @@ h2 {
 }
 
 .screen-3 {
-  background-color: lightcoral;
+  z-index: -3;
+  pointer-events: none;
 }
 
 .circle {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.screen-4 {
+  z-index: -5;
+  pointer-events: none;
 }
