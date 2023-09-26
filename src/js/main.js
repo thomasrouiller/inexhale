@@ -42,7 +42,7 @@ function animateTl1() {
     { opacity: 1 },
     {
       opacity: 0,
-      duration: 1.5,
+      duration: 4,
     },
     "-=1"
   );
@@ -51,7 +51,7 @@ function animateTl1() {
     { opacity: 1 },
     {
       opacity: 0,
-      duration: 1.5,
+      duration: 2,
     },
     "-=0.5"
   );
